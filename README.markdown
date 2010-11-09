@@ -10,20 +10,20 @@ Use:
 * Edit the og_simple_fields.module file with the name of your content type in place of 'partnership'
 * If more than one content type is a group type, add more switch cases like this:
 
-    switch ($form_id) {
-      // Replace 'partnership' with your content type below:
-      case 'partnership_node_form':
-      case 'other_group_node_form':
-      case 'yet_another_group_node_edit_form':
+      switch ($form_id) {
+        // Replace 'partnership' with your content type below:
+        case 'partnership_node_form':
+        case 'other_group_node_form':
+        case 'yet_another_group_node_edit_form':
     
 * The cases will 'fall through' to all inherit the settings.
 * To modify settings, use the following information:
 
-    ['og_selective']['#default-value'] = # Set this to 
-      0 for Open
-      1 for Moderated
-      2 for Invite Only
-      3 for Closed
+      $form['og_selective']['#default-value'] = # Set this to 
+        0 for Open
+        1 for Moderated
+        2 for Invite Only
+        3 for Closed
 
 License:
 ========
