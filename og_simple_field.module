@@ -1,0 +1,17 @@
+<?php
+function og_simple_field_form_alter(&$form, &$form_state, $form_id) {
+  <?php
+  function og_matc_customfield_form_alter(&$form, &$form_state, $form_id) {
+   // print $form_id;
+    switch ($form_id) {
+      // Replace 'partnership' with your content type below:
+      case 'partnership_node_form':
+        // Hide the choice of membership request options, leave this at always "Moderated"
+        $form['og_selective']['#access'] = 0;
+        $form['og_selective']['#default_value'] = 1; 
+        // Hide Group Directory checkbox and Registration fields
+        $form['og_directory']['#access'] = 0;
+        $form['og_register']['#access'] = 0;
+    break;
+    }
+  }

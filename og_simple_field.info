@@ -1,0 +1,6 @@
+name = Organic Groups Simplified Field Settings
+description = Simplifies Organic Groups Settings to Always be Moderated.
+core = 6.x
+version = "6.x-1.x"
+project = "og_simple_fields"
+package = "Organic groups"
